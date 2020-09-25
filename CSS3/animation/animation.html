@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3 Animation</title>
+	<style type="text/css">
+		div {
+			width: 200px;
+			height: 200px;
+			background-color: salmon;
+			/*animation : name duration timing-function iteration-count direction*/
+			/*direction = normal, reverse, alternate, alternate-reverse*/
+			/*iteration-count = infinite atau gunakan angka*/
+			/*fill-mode = none, forwards */
+			/*play-state = running, paused*/
+			animation: animasikotak 3s ease infinite alternate forwards running;
+		}
+
+		/*.kotak:hover {
+			animation: animasikotak 2s ease;
+		}*/
+		/*siapkan dulu animasinya (name)*/
+		@keyframes animasikotak {
+			0% {
+				width: 200px;
+			}
+
+			50% {
+				width: 500px;
+				height: 200px;
+			}
+
+			100% {
+				width: 500px;
+				height: 500px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="kotak"></div>
+
+</body>
+</html>
